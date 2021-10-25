@@ -17,21 +17,27 @@ return true;
 auto main() -> int
 {
 int a;
+int stala = 0;
 
  std::cout<<"Podaj liczbe:";
  std::cin>>a;
+ 
+while(a>0){
+if(pierwsza(a)){
+stala = stala + a;
+a--;
+}
+else{
+a--;
+}
+}
 
-if(pierwsza(a))
-std::cout<<"Liczba" <<a<<" jest pierwsza";
-else
-std::cout<<"Liczba" <<a<<" nie jest pierwsza";
-std::cout<<"\n";
+std::cout <<"Wynik ="<< stala;
+
 
 return  0;
 
 }
-
-
 
 
 
